@@ -1,0 +1,139 @@
+:root {
+    --primary: #6C63FF;
+    --secondary: #4FD1C5;
+    --dark: #2D3748;
+    --light: #F7FAFC;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero-section {
+    padding: 5rem 0;
+    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
+                url('https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary);
+    border: none;
+    padding: 10px 25px;
+  }
+  
+  .nav-pills .nav-link.active {
+    background-color: var(--primary);
+  }
+  /* Add these to your existing styles.css */
+.navbar {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-link.active {
+    color: #6C63FF !important;
+  }
+  
+  .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    right: 1rem;
+    height: 2px;
+    background: #6C63FF;
+  }
+  
+  .btn-nav-primary {
+    background-color: #6C63FF;
+    color: white;
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-nav-primary:hover {
+    background-color: #5a52d4;
+    transform: translateY(-2px);
+  }
+  /* Add these styles to your existing styles.css */
+
+/* Hero Section */
+.hero-section {
+  background-color: #f8f9fa;
+}
+
+/* Process Steps */
+.process-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.step {
+  text-align: center;
+  flex: 1;
+}
+
+.step-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #6C63FF;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.5rem;
+  font-weight: bold;
+}
+
+.step-connector {
+  flex: 1;
+  height: 2px;
+  background-color: #dee2e6;
+  margin: 0 10px;
+}
+
+/* Card Hover Effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Primary Color Overrides */
+.btn-primary {
+  background-color: #6C63FF;
+  border-color: #6C63FF;
+}
+
+.btn-primary:hover {
+  background-color: #5a52d6;
+  border-color: #5a52d6;
+}
+
+.text-primary {
+  color: #6C63FF !important;
+}
+
+.bg-primary {
+  background-color: #6C63FF !important;
+}
+  
+  /* Add all other shared styles from previous examples */

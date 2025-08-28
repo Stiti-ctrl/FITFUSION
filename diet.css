@@ -1,0 +1,150 @@
+
+    :root {
+      --primary-color: #6C63FF;
+      --secondary-color: #4D44DB;
+      --light-color: #F8F9FA;
+      --dark-color: #212529;
+      --success-color: #28a745;
+      --info-color: #17a2b8;
+      --warning-color: #ffc107;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--dark-color);
+    }
+    
+    /* Hero Section */
+    .diet-hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                  url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 120px 0;
+      text-align: center;
+    }
+    
+    /* Diet Plan Cards */
+    .diet-card {
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: none;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+    
+    .diet-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .diet-card .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    .diet-card .card-body {
+      padding: 25px;
+    }
+    
+    /* Diet Plan Badges */
+    .weight-loss-badge {
+      background-color: var(--success-color);
+    }
+    
+    .muscle-gain-badge {
+      background-color: var(--warning-color);
+      color: var(--dark-color);
+    }
+    
+    .balanced-badge {
+      background-color: var(--info-color);
+    }
+    
+    /* Nutrition Info Cards */
+    .nutrition-card {
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      height: 100%;
+      transition: all 0.3s ease;
+    }
+    
+    .nutrition-card:hover {
+      transform: scale(1.03);
+    }
+    
+    .nutrition-icon {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    
+    /* Meal Plan Tabs */
+    .nav-pills .nav-link.active {
+      background-color: var(--primary-color);
+    }
+    
+    .nav-pills .nav-link {
+      color: var(--dark-color);
+      border-radius: 50px;
+      padding: 8px 20px;
+      margin: 0 5px;
+    }
+    .meal-card {
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    }
+    
+    .meal-card img {
+      height: 150px;
+      object-fit: cover;
+    }
+    .diet-cta {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    @media (max-width: 768px) {
+      .diet-hero {
+        padding: 80px 0;
+      }
+  .diet-hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+    
+.btn-primary {
+  background-color: #6C63FF;
+  border-color: #6C63FF;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #4D44DB;
+  border-color: #4D44DB;
+  transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+  color: #6C63FF;
+  border-color: #6C63FF;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #6C63FF;
+  color: white;
+  transform: translateY(-2px);
+}

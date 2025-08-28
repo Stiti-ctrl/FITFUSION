@@ -1,0 +1,82 @@
+
+    .meditation-hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                  url('https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .benefit-card {
+      transition: transform 0.3s;
+    }
+    .benefit-card:hover {
+      transform: translateY(-5px);
+    }
+    .session-card {
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+      height: 100%;
+    }
+    .session-card:hover {
+      transform: translateY(-5px);
+    }
+    .session-card .card-img-top {
+      height: 180px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .session-card .card-body {
+      display: flex;
+      flex-direction: column;
+      height: calc(100% - 180px);
+    }
+    .session-card .card-text {
+      flex-grow: 1;
+    }
+    .session-card .card-footer-content {
+      margin-top: auto;
+    }
+    /* Button Styles */
+    .btn-primary {
+      background-color: #6C63FF;
+      border-color: #6C63FF;
+      padding: 10px 25px;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #4D44DB;
+      border-color: #4D44DB;
+      transform: translateY(-2px);
+    }
+    .btn-outline-primary {
+      color: #6C63FF;
+      border-color: #6C63FF;
+      padding: 10px 25px;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    .btn-outline-primary:hover {
+      background-color: #6C63FF;
+      color: white;
+      transform: translateY(-2px);
+    }
+    /* Modal Styles */
+    .modal-video {
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      position: relative;
+    }
+    .modal-video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
